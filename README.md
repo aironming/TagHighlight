@@ -1,37 +1,9 @@
 # TagHighlight
 
-TagHighlight is a plugin that highlights names of classes, variables, types etc in source code in Vim.  This makes it quicker and easier to spot errors in your code.  By using exuberant ctags and parsing the output, the typedefs, #defines, enumerated names etc are all clearly highlighted in different colours.  As standard, it supports the following languages (but it's very easy to add more):
+TagHighlight is a plugin that highlights names of classes, variables, types etc in source code in Vim.
 
-* C/C++ (most of the testing has been with these)
-* C#
-* Java
-* Javascript
-* Matlab (functions only; may require custom ctags version)
-* Perl
-* PHP
-* Python
-* Ruby
-* Scala
-* Fortran
-* Go (if your version of ctags supports it)
-* VHDL (if your version of ctags supports it)
+The source is managed in Mercurial and is available on [bitbucket][Bitbucket].
 
-Adding more languages is extremely simple.
+I used to use Git to manage the source code for TagHighlight, but I had a **lot** of problems with it.  In particular, I kept finding commits going missing as branches were being created even when the development should have been linear!  I spent a huge amount of time trying to fix this and finally gave up and moved the code to Mercurial.  My original intention was to maintain a git mirror and I did this for a while, but github won't let me push the latest changes as it thinks they conflict with previous changes.  I've spent two hours trying to get github to play ball and I'm now giving up.  Sorry to anyone who wanted to use the git mirror.
 
-To show the benefit of this plugin, there are some screenshots and a more detailed description at the following website:
-
-  [http://www.cgtk.co.uk/taghighlight][Website]
-
-Installation instructions are available here:
-
-  [http://www.cgtk.co.uk/taghighlight/install][InstallGuide]
-
-The source is managed in Mercurial and is available on [bitbucket][Bitbucket].  It is also mirrored on [github][Github].
-
-Detailed documentation can be found in [doc/TagHighlight.txt][Documentation].
-
-[Website]: http://www.cgtk.co.uk/taghighlight
-[InstallGuide]: http://www.cgtk.co.uk/taghighlight/install
 [Bitbucket]: https://bitbucket.org/abudden/taghighlight
-[Github]: https://github.com/abudden/TagHighlight
-[Documentation]: https://bitbucket.org/abudden/taghighlight/src/default/doc/TagHighlight.txt
